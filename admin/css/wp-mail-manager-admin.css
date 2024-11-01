@@ -1,0 +1,59 @@
+/* Adminbar menu */
+#wpadminbar #wp-admin-bar-wp-mail-manager-buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wpadminbar #wp-admin-bar-wp-mail-manager-buttons > div button {
+  border: 0;
+  padding: 0;
+  outline: 0;
+  background: none;
+  height: 100%;
+  cursor: pointer;
+}
+#wpadminbar #wp-admin-bar-wp-mail-manager-buttons > div button:hover img {
+  filter: invert(30%) sepia(26%) saturate(5224%) hue-rotate(153deg) brightness(96%) contrast(104%);
+}
+#wpadminbar #wp-admin-bar-wp-mail-manager-buttons > div > button img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+#wpadminbar #wp-admin-bar-wp-mail-manager-buttons > div > button.refreshing {
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Settings page */
+#wp-mail-manager-settings {
+  max-width: 760px;
+}
+#wp-mail-manager-settings .wp-mail-manager-content hr {
+  margin: 35px 0;
+}
+#wp-mail-manager-settings .wp-mail-manager-content h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#wp-mail-manager-settings .wp-mail-manager-content p {
+  font-size: 15px;
+  color: #3F3F3F;
+}
+#wp-mail-manager-settings .wp-mail-manager-content a {
+  color: #00CBFF;
+  text-decoration: none;
+}
+#wp-mail-manager-settings .wp-mail-manager-content p.note {
+  font-style: italic;
+  color: #7F7F7F;
+}
